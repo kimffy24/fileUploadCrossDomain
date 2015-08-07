@@ -29,5 +29,6 @@
 
 
 扩展 ：
+
     setUploadCallbackFunction(callback) 可设置自定义回调函数
     需在绑定的click事件触发之前执行；
