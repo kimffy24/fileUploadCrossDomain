@@ -1,0 +1,7 @@
+/*
+  author:Jiefzz;
+*/
+@charset "utf-8";
+body{padding: 28px;}
+.uploadHidden{display:none;}
+.uploadShow{display:block;weight:360px;height:240px}
