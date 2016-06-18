@@ -13,7 +13,7 @@
     <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- 若cdn失效，请自己提供jquery和bootstrap库 -->
 
-    <script type="text/javascript" src="http://file.test/utils/upload/v1/embedded.js"></script>
+    <script type="text/javascript" src="http://vgentoo/fileUploadCrossDomain/utils/upload/v1/embedded.js"></script>
     <style>
         body{padding: 46px;}
     </style>

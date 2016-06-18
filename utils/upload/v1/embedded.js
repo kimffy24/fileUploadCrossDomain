@@ -6,7 +6,7 @@
  * 请修改此处为你设定的域名存放此项目的域名
  * @type {string}
  */
-var hostOnSpro = "http://file.test";
+var hostOnSpro = "http://vgentoo/fileUploadCrossDomain";
 
 var superUploadUrl = hostOnSpro+"/utils/upload/v1/show.php";
 var mainFunctionJs = hostOnSpro+"/utils/upload/v1/embedded_main.js";
