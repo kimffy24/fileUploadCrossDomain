@@ -5,9 +5,9 @@
 
 
 设置 ：
-
-    打开/path/to/embedded.js
-    修改hostOnSpro变量为你设定的存放此项目的域名。
+    设置 /etc/hosts 加入一下
+    > 127.0.0.1 file.domain.xyz dev.domain.com
+    其中dev.domain.com为测试业务域名，file.domain.xyz为文件存储服务提供者的域名
 
 加载方法 ：
 

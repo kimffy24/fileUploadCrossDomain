@@ -1,5 +1,5 @@
-<?php // onchange="preImg(this.id, 'imgPre')"
-    //Please load this file on a different domain!
+<?php
+    $storageHost="http://file.domain.xyz";
 ?>
 <!DOCTYPE html>
 <html>
@@ -7,13 +7,19 @@
     <meta charset="UTF-8">
     <title>测试跨域ajax文件上传</title>
 
+    <!-- 若cdn失效，请自己提供jquery和bootstrap库 -->
+    <!-- 若cdn失效，请自己提供jquery和bootstrap库 -->
+    <!-- 若cdn失效，请自己提供jquery和bootstrap库 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!-- 若cdn失效，请自己提供jquery和bootstrap库 -->
 
-    <script type="text/javascript" src="http://vgentoo/fileUploadCrossDomain/utils/upload/v1/embedded.js"></script>
+    <script type="text/javascript">
+        var storageHost="<?php echo $storageHost; ?>";
+        $.getScript(storageHost+"/utils/upload/v1/embedded.js",function(){});
+    </script>
+
     <style>
         body{padding: 46px;}
     </style>

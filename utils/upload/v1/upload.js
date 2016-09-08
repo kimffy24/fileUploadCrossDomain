@@ -48,7 +48,7 @@ function setNiuBiUpload(sourceId, targetId){
 function setNiuBiTriggers(sourceId){
     $("#submit").click(function () {
         $.ajaxFileUpload({
-            url: 'upload.php', //用于文件上传的服务器端请求地址
+            url: '/server/upload.php', //用于文件上传的服务器端请求地址
             data: {pre: getQueryString("pre")},
             secureuri: false, //是否需要安全协议，一般设置为false
             fileElementId: sourceId, //文件上传域的ID

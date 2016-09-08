@@ -6,13 +6,13 @@
  * 请修改此处为你设定的域名存放此项目的域名
  * @type {string}
  */
-var hostOnSpro = "http://vgentoo/fileUploadCrossDomain";
+var fileServiceHost = undefined==storageHost?window.location.origin:storageHost;
 
-var superUploadUrl = hostOnSpro+"/utils/upload/v1/show.php";
-var mainFunctionJs = hostOnSpro+"/utils/upload/v1/embedded_main.js";
+var superUploadUrl = fileServiceHost+"/utils/upload/v1/uploadDialogChild.html";
+var mainFunctionJs = fileServiceHost+"/utils/upload/v1/embedded_main.js";
 
-$.getScript(hostOnSpro+"/share/js/artDialog/artDialog.js",function(){});
-$.getScript(hostOnSpro+"/share/js/artDialog/iframeTools.js?v=",function(){});
+$.getScript(fileServiceHost+"/share/js/artDialog/artDialog.js",function(){});
+$.getScript(fileServiceHost+"/share/js/artDialog/iframeTools.js?v=",function(){});
 
 function loadCss( url ){
     var link = document.createElement( "link" );
@@ -22,7 +22,7 @@ function loadCss( url ){
     document.getElementsByTagName( "head" )[0].appendChild( link );
 };
 
-loadCss(hostOnSpro+"/share/js/artDialog/skins/blue.css");
+loadCss(fileServiceHost+"/share/js/artDialog/skins/blue.css");
 
 
 var callbackFunction = undefined;
