@@ -26,7 +26,7 @@ file.domain.xyz为文件存储服务提供者的域名<br />
         $.getScript(storageHost+"/utils/upload/v1/embedded.js",function(){});
     </script>
 
-其中storageHost填入文件存储服务提供者的域名,这里是file.domain.xyz
+其中storageHost填入文件存储服务提供者的域名,这里是file.domain.xyz，storageHost也是embedded.js里面需要用到的变量，因此他的名字不能更改。
 
 对指定标签绑定click事件 ：
 
@@ -39,6 +39,7 @@ file.domain.xyz为文件存储服务提供者的域名<br />
         });
         //其中superUpload为默认可用的回调函数
         //更新服务器返回的值到对应的input#id的value属性中
+参考/test/demo.php写法
 
 
 扩展 ：
