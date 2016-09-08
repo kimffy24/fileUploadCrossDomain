@@ -20,12 +20,12 @@ file.domain.xyz为文件存储服务提供者的域名<br />
 ### 加载方法 ：
 1.业务页面中先加载Jquery库<br />
 2.在JQuery的加载代码后面放入
->
->    <script type="text/javascript">
->        var storageHost="file.domain.xyz";
->        $.getScript(storageHost+"/utils/upload/v1/embedded.js",function(){});
->    </script>
->
+
+    <script type="text/javascript">
+        var storageHost="file.domain.xyz";
+        $.getScript(storageHost+"/utils/upload/v1/embedded.js",function(){});
+    </script>
+
 其中storageHost填入文件存储服务提供者的域名,这里是file.domain.xyz
 
 对指定标签绑定click事件 ：
