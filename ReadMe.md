@@ -1,22 +1,21 @@
-简介 ：
+### 简介 ：
+------
+跨域ajax文件上传，目前版本只能一次上传一个文件。
+使用Html5的postMessage提供跨域之间的消息传递。
+注意console里面的输出调整项目。
 
-    跨域ajax文件上传，目前版本只能一次上传一个文件。
-    使用Html5的postMessage提供跨域之间的消息传递。注意console里面的输出调整项目。
 
+##### 设置 ：
+设置 /etc/hosts 加入一下
 
-设置 ：
+    127.0.0.1 file.domain.xyz dev.domain.com
 
-    设置 /etc/hosts 加入一下
-
-    > 127.0.0.1 file.domain.xyz dev.domain.com
-    
     其中dev.domain.com为测试业务域名
     file.domain.xyz为文件存储服务提供者的域名
 
-加载方法 ：
-
-    1.业务页面中先加载Jquery库
-    2.再加载 http://domain/path/to/embedded.js
+##### 加载方法 ：
+1.业务页面中先加载Jquery库
+2.再加载 http://domain/path/to/embedded.js
 
 
 对指定标签绑定click事件 ：
