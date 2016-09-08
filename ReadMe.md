@@ -15,7 +15,7 @@
 其中dev.domain.com为测试业务域名<br />
 file.domain.xyz为文件存储服务提供者的域名<br />
 启动nginx<br />
-访问[http://dev.domain.com](#http://dev.domain.com)
+访问[http://dev.domain.com/test/demo.php](#http://dev.domain.com/test/demo.php)
 
 ### 加载方法 ：
 1.业务页面中先加载Jquery库<br />
