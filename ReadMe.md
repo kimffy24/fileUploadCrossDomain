@@ -22,7 +22,7 @@ file.domain.xyz为文件存储服务提供者的域名<br />
 2.在JQuery的加载代码后面放入
 >
 >    <script type="text/javascript">
->        var storageHost="";
+>        var storageHost="file.domain.xyz";
 >        $.getScript(storageHost+"/utils/upload/v1/embedded.js",function(){});
 >    </script>
 >
