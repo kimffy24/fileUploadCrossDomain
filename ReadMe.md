@@ -5,9 +5,13 @@
 
 
 设置 ：
+
     设置 /etc/hosts 加入一下
+
     > 127.0.0.1 file.domain.xyz dev.domain.com
-    其中dev.domain.com为测试业务域名，file.domain.xyz为文件存储服务提供者的域名
+    
+    其中dev.domain.com为测试业务域名
+    file.domain.xyz为文件存储服务提供者的域名
 
 加载方法 ：
 
